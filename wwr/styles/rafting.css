@@ -47,35 +47,36 @@ a {
     justify-content: center;
     width: 100%;
     line-height: 70px; 
+    background-color: rgba(2, 48, 71, 0.6);
     color: white;
     top: 40px;
 }   
 
 article {
     width: 500px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
     bottom: 20px;
     right: 20px;
     position: absolute;
+    background-color: rgba(33, 158, 188, 0.5);
 }
 
 article p {
     color: white;
     padding: 10px 20px;
-    text-align: right;
-    background: var(--color-dark-blue);
-    opacity: .6;
+    text-align: right;   
 }
 
 article img {
     max-width: 30%;
+    padding: 15px;
     height: auto;
     float: right;
+    opacity: none;
 }
 
 .sociallinks a {
+    display: block;
+    width: 48px;
+    height: 48px;
     text-decoration: none;
-    color: var(--color-orange);
 }
