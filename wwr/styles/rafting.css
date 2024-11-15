@@ -12,6 +12,30 @@
     box-sizing: border-box;
 }
 
+header {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    align-items: center;
+    width: 1000px;
+}
+
+header img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 body {
     font-family: "Open Sans", serif;
     font-weight: 400;
