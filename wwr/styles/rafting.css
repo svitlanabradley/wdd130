@@ -160,9 +160,6 @@ article img {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    gap: 20px; */
 }
 
 .adventure figure {
@@ -207,7 +204,6 @@ footer p {
 }
 
 .sociallinks a {
-    fill: var(--color-orange);
     width: 40px;
     height: auto;
 }
