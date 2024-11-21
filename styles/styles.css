@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+main {
+    max-width: 100%;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
