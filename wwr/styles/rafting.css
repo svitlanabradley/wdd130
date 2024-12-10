@@ -245,7 +245,7 @@ main iframe {
 } 
 
 .main-contacts {
-    width: 500px;
+    width: 100%;
     display: flex;
 }
 
@@ -281,7 +281,7 @@ main iframe {
     border-radius: 30px;
 }
 
-.form {
+form {
     display: grid;
     margin: 0 40px;
     
@@ -298,10 +298,11 @@ main iframe {
     height: 30px;
     border: none;
     padding: 0 10px;
+    margin: 10px 0;
 }
 
 .row1 label {
-    padding: 0 10px;
+    padding: 10px 0;
 }
 
 .row2 {
@@ -332,7 +333,7 @@ button {
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
-    width: 150px;
+    width: 200px;
     
 }
 
