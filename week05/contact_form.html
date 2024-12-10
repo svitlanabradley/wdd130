@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            grid-column: span 2;
+        }
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group .checkbox {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .checkbox input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .form-group .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .form-group .submit-btn-container {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        
+        <!-- User's Name -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- User's Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <!-- Purpose of the Message -->
+        <div class="form-group">
+            <label>Purpose of Message:</label>
+            <div class="radio-group">
+                <label><input type="radio" id="general" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                <label><input type="radio" id="reservation" name="purpose" value="Reservation Question" required> Reservation Question</label>
+                <label><input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required> Website Suggestion</label>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="form-group checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group submit-btn-container">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
