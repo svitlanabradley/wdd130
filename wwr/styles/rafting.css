@@ -13,9 +13,9 @@
 }
 
 header {
-    margin: 0 40px;
+    background-color: var(--color-dark-blue);
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 700px 1fr;
     align-items: center;
     width: 100%;
 }
@@ -25,6 +25,7 @@ header img {
     padding: 0 5px;
     width: 50px;
     height: 50px;
+    margin: 0  0 0 40px;
 }
 
 .logo {
@@ -39,14 +40,14 @@ header nav {
 }
 
 header nav a {
-    color: var(--color-dark-blue);
+    color: var(--color-orange);
     position: relative;
     transition: all .25s ease;
 }
 
 header nav a::after {
     content: "";
-    background: var(--color-orange);
+    background:var(--color-yellow);
     height: 2px;
     width: 100%;
     position: absolute;
@@ -57,7 +58,7 @@ header nav a::after {
 }
 
 header nav a:hover {
-    color: var(--color-orange);
+    color: var(--color-yellow);
 }
 
 header nav a:hover::after {
@@ -73,7 +74,7 @@ body {
 h1 {
     font-family: "Langar", system-ui; 
     font-size: 20px;  
-    color: var(--color-dark-blue);
+    color: var(--color-blue);
 }
 
 h2 {
@@ -116,11 +117,12 @@ article {
     bottom: 20px;
     right: 20px;
     position: absolute;
-    background-color: rgba(33, 158, 188, 0.5);
+    background-color: rgba(33, 158, 188, 0.2);
 }
 
 article p {
-    color: white;
+    color: black;
+    font-weight: 600;
     padding: 10px 20px;
     text-align: right;   
 }
@@ -328,7 +330,8 @@ textarea {
 button {
     margin: 20px auto;
     background-color: var(--color-dark-blue);
-    color: #fff;
+    color: var(--color-dark-blue);
+    font-weight: 500;
     border: none;
     border-radius: .5rem;
     padding: .75rem;
@@ -353,12 +356,17 @@ button:hover {
     box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2)
 }
 
-.tours p, h3 {
+.tours p {
     color: whitesmoke;
 }
 
-.tours p {
-    padding: 20px 0;
+.tours h3 {
+    color: whitesmoke;
+    margin: 10px 0;
+}
+
+.details-container {
+    padding: 10px 20px;
 }
 
 .tours button {
@@ -391,15 +399,14 @@ button:hover {
 
  .newsletter {
     width: 700px;
-    margin: 40px auto;
-    background-color: var(--color-dark-blue);
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgba(33, 158, 188, 0.2);
     box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     padding: 40px 0;
-    /* justify-content: center; */
-    /* align-items: center; */
  }
 
  .newsletter input {
@@ -412,15 +419,22 @@ button:hover {
     position: absolute;
  }
 
- .newsletter button {
+ button {
     position: relative;
     width: 150px;
-    height: 40px;
-    left: 230px;
-    bottom: 5px;
+    height: 40px; 
     align-items: center;
     font-size: medium;
     background-color: var(--color-orange);
+ }
+
+ button:hover {
+    background-color: var(--color-yellow);
+}
+
+ .newsletter button {
+    left: 230px;
+    bottom: 5px;
  }
 
  .newsletter button:hover {
@@ -432,14 +446,88 @@ button:hover {
  }
 
  .newsletter p {
-    color: var(--color-orange);
+    color: var(--color-dark-blue);
     padding: 0 40px;
+    font-weight: 700;
  }
 
  .info {
     color: var(--color-dark-blue);
     font-size: larger;
     text-align: center;
-     margin: 0 80px;
+    margin: 0 80px;
     padding-bottom: 40px;
  }
+
+ #trip-table {
+    text-align: center;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+th {
+    background-color: var(--color-dark-blue);
+    color: var(--color-orange);
+}
+
+.cta-container {
+    text-align: center;
+    color: var(--color-dark-blue);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta-container h2 {
+    color: var(--color-dark-blue);
+}
+
+#trips {
+    text-align: center;
+    padding: 40px;
+}
+
+.trip-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-card h3 {
+    margin: 10px;
+    color: var(--color-dark-blue);
+}
+
+.trip-card p {
+    margin: 10px;
+    color: #555;
+}
+
+.trip-card button {
+    margin: 10px;
+}
+
