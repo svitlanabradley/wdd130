@@ -340,3 +340,106 @@ button {
 button:hover {
     background-color: var(--color-orange);
 }
+
+.tours {
+    max-width: 100%;
+    padding: 40px;
+    background-color: var(--color-dark-blue);
+}
+
+.tours img {
+    width: 600px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2)
+}
+
+.tours p, h3 {
+    color: whitesmoke;
+}
+
+.tours p {
+    padding: 20px 0;
+}
+
+.tours button {
+    background-color: var(--color-orange);
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    font-size: medium;
+}
+
+.tours button:hover {
+    background-color: var(--color-yellow);
+}
+
+ .tour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 40px;
+ }
+
+ .tour1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 40px;
+ }
+
+ .newsletter {
+    width: 700px;
+    margin: 40px auto;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+ }
+
+ .newsletter input {
+    width: 620px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    margin: 10px 0;
+    position: absolute;
+ }
+
+ .newsletter button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    left: 230px;
+    bottom: 5px;
+    align-items: center;
+    font-size: medium;
+    background-color: var(--color-orange);
+ }
+
+ .newsletter button:hover {
+    background-color: var(--color-yellow);
+}
+
+ .input {
+    display: flex;
+ }
+
+ .newsletter p {
+    color: var(--color-orange);
+    padding: 0 40px;
+ }
+
+ .info {
+    color: var(--color-dark-blue);
+    font-size: larger;
+    text-align: center;
+     margin: 0 80px;
+    padding-bottom: 40px;
+ }
